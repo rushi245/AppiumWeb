@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <context-param>
+    <param-name>script-folder</param-name>
+    <param-value>D:\SysTrace_Android\AppiumWeb\Scripts</param-value>
+  </context-param>
+  <context-param>
+    <param-name>apk-folder</param-name>
+    <param-value>D:\SysTrace_Android\AppiumWeb\APKFiles</param-value>
+  </context-param>
+  <servlet>
+    <description></description>
+    <display-name>TestConnection</display-name>
+    <servlet-name>TestConnection</servlet-name>
+    <servlet-class>Appium.TestConnection</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TestConnection</servlet-name>
+    <url-pattern>/TestConnection</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UploadFiles</display-name>
+    <servlet-name>UploadFiles</servlet-name>
+    <servlet-class>Appium.UploadFiles</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UploadFiles</servlet-name>
+    <url-pattern>/UploadFiles</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ScriptList</display-name>
+    <servlet-name>ScriptList</servlet-name>
+    <servlet-class>Appium.ScriptList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ScriptList</servlet-name>
+    <url-pattern>/ScriptList</url-pattern>
+  </servlet-mapping>
+</web-app>
